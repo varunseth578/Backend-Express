@@ -14,3 +14,4 @@ app.get("/files/:fileName",function(req,res){
 });
 
 app.listen(3000);
+//http://localhost:3000/files/file.txt
