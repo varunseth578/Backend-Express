@@ -1,6 +1,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
+const fs = require("fs");
+fs.readFile("a.txt","utf-8",function(err,data){
+
+})
+
 // express hello world 
 const app = express();
 
@@ -14,10 +19,19 @@ app.post('/conn', (req, res) => {
   });
 });
 
+//www.google.com/message=123
+app.post('/co', (req, res) => {
+    const message = req.query.message;
+    console.log(message);
+    res.json({
+      output : "2+2"
+    });
+  });
 
+//postman
 app.get('/route', (req, res) => {
   res.json({
-    name: varun,
+    name: "varun",
     age:21
   });
 });
