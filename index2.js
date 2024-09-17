@@ -12,6 +12,7 @@ function calsum(n) {
   }
   return ans;
 }
+//req ,res => request and response
 app.get("/", function (req, res) {
     const n= req.query.n;
     const ans = calsum(n);
