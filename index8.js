@@ -1,4 +1,4 @@
-//input validation  
+//input validation  this is ugly way to do input validation so we use ZOD
 const express = require("express");
 const app= express();
 app.use(express.json());
